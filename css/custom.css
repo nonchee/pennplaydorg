@@ -1,0 +1,285 @@
+/* Space out content a bit */
+html {
+
+}
+
+body {
+  font-family: 'Lato', Avenir, Tahoma, sans-serif;
+  color: black;
+    background: url('../images/background.svg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    background-color: #5FFFD0;
+
+}
+
+a{
+  color: #81BEF7;
+}
+
+a:focus {
+  color: #81BEF7;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, em, b, p,a {
+  font-family: 'Lato', Avenir, Tahoma, sans-serif;
+  font-weight: 200;
+    color: #050F29;
+
+}
+
+h1 {
+  font-weight: 800;
+}
+
+.up {
+  text-transform: uppercase;
+}
+ 
+h1 {
+  font-size: 500%;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+figcaption {
+  text-transform: lowercase;
+}
+.box {
+  background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+    position: relative;
+    top: 0%;
+    transform: translateY(5%);
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.nav.navbar-nav li a{
+  color: #999999;
+  text-transform: uppercase;
+  background-color: transparent;
+  margin-left: 0%;
+ }
+
+ .navbar-default {
+  border-color: transparent;
+  background-color: transparent;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+ }
+
+ .navbar-nav{   
+    position: relative;
+  }
+
+.subnav{
+  margin-top: -25px;
+  font-size: smaller;
+}
+
+.active {
+  color: black;
+
+}
+
+.aligncenter{
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.thumbnail {
+  height: auto; 
+  width: auto; 
+  max-width: 250px;
+}
+
+.fullsize {
+  height: auto; 
+  width: auto; 
+  max-width: 700px;
+}
+
+.gallery {
+  height: auto; 
+  width: auto; 
+  max-width: 260px;
+  display: inline-block;
+  margin: 0px 7px 15px 7px;
+}
+
+.galleryv {
+  height: auto; 
+  width: auto; 
+  max-height: 250px;
+  display: inline-block;
+  margin: 0px 7px 15px 7px;
+}
+
+.socialmediathumb {
+  max-height: 50px;
+  padding-right: 10px;
+}
+
+.forty {
+  padding-bottom: 40px;
+}
+
+.twenty {
+  padding-bottom: 20px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    background-image: url("pic.jpg");
+    background-position: 0% 25%;
+    color: white;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
+
+/*------ all da background stuff -----*/
+
+
+.cloud {
+    position: fixed; 
+    width :15%;  
+}
+
+.backgroundclouds {
+    position: absolute; 
+    margin: -5%; 
+}
+#background-hourglass {
+    overflow: auto; /* prevents margin collapse when spacing penn play title */
+    height: 280vw; 
+    background-image: url("../res/hourglass_top_initial-view.svg");
+    background-position:50% 55%;
+    background-repeat: no-repeat;
+    background-size: 210% 210%;
+}
+
+#welcome-pennplaytitle {
+    position: fixed; 
+    width: 88%;
+    height: 20%; 
+    left: 52.5%;
+    margin-left: -44%;
+    margin-top: 18%; 
+}
+
+#welcome-pennplaytitle > img{
+  max-height: 100%; 
+  height: 10em; 
+  margin: 1%; 
+  
+}
