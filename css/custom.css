@@ -14,6 +14,7 @@ body {
     background-color: #5FFFD0;
     max-width: 100%;
     overflow-x: hidden;
+     margin:0; /*gets rid of odd side margins */
 }
 
 a{
@@ -34,7 +35,7 @@ p {
   font-size: 18px;
 }
 
-h1, h2, h3, h4, em, b, p,a {
+h1, h2, h3, h4, em, b, p,a, ul{
   font-family: 'Lato', Avenir, Tahoma, sans-serif;
   font-weight: 200;
     color: #050F29;
@@ -283,6 +284,24 @@ figcaption {
     top: auto;
 }
 
+#register {
+    color: white !important;
+     -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    position: absolute;
+    text-align: center; 
+    width: 75%; 
+    margin-left: -25%; 
+    left: 37.5%;
+    margin-top: 35%; 
+    z-index: 9000; 
+
+}
+
+
+a, a:hover {
+    text-decoration: none; 
+}
 
 #foreground-hourglass {
     position: absolute; /**/
@@ -299,7 +318,7 @@ figcaption {
 
 #information-tabs {
     position:absolute;
-    bottom: -200%; /*LOL trying to place this at an exact spot on the website so this is quite janky*/
+    top: 2080px; 
     z-index:20000;
 }
 
@@ -317,34 +336,36 @@ figcaption {
     text-align: center;
 }
 
+.navbar > .navitem :hover {
+    opacity:0.5;    
+}
+
+.navbar > .navitem > h2{
+    cursor: pointer;
+    display: inline-block;
+}
+
 .hidden { 
     display: none;
 }
 
 
-.lotsawords {
+.lotsawords{
     position: absolute; 
-    bottom: -540%;
+    top: 2050px;
     width: 80%; 
     padding: 10%; 
     z-index: 9000; 
     display: none;
 }
-/*
 
-#welcome-pennplaytitle > img{
-    max-height:100%;
-    height: auto; 
+
+#smalltitle {
+   position:absolute; 
+    top:1800px;
+    z-index: 0; 
+    width: 100%; 
 }
 
-#welcome-pennplaytitle > .billboard > img{
-    max-height:100%;
-    height: auto; 
-}
 
-#welcome-pennplaytitle > .billboard {
-  display: inline-block; 
-  max-height: 100%; 
-  height: auto; 
-  width: 10%; 
-} */
+

@@ -5,7 +5,7 @@ $(document).ready(function(){
     //intialize clouds function
     //callback is animate clouds
 
-   
+           $("#content-welcome").fadeIn();
     
     var animateCloud = function(targetElement, speed, first){
         
@@ -41,13 +41,15 @@ $(document).ready(function(){
         i++;
     });
     
+    var scrolledDown = false;
     var lastPosition = 0;
     $(document).scroll(function () { 
-
+        
         position = window.pageYOffset;
-        console.log(position); 
+        //console.log(position); 
         if (position > 500) {
             $('#welcome-pennplaytitle').hide();
+            scrolledDown = true;
         } else { 
             var foreground_y = parseInt($("#foreground-hourglass").css("top"));
             if(position < lastPosition) {
@@ -59,40 +61,47 @@ $(document).ready(function(){
             lastPosition = position;
         }
         
-        if (position > 2150) {
-            console.log("at position!");
+        if (position > 1400) {
+                    $('#smalltitle').css('display', "inline");
+            $('#smalltitle').addClass('animated bounceInDown'); }
+        
+        if (position > 1650) {
             $('#information-tabs').css('display', "inline");
-            $('#information-tabs').addClass('animated bounceInUp');
+            $('#information-tabs').addClass('animated bounce');
+            
         }
         
-        if($(window).scrollTop() + $(window).height() == $(document).height()) {
-            $('#information-tabs').fadeIn();
+        if (position <= 0 && scrolledDown) {
+            $('#welcome-pennplaytitle').show();
+            $('#welcome-pennplaytitle').addClass('animated bounce');
+            scrolledDown = false;
         }
+      /*  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $('#information-tabs').fadeIn();
+        }*/
     });
     
     $("#nav-FAQ").on("click", function () {
-        console.log("FUCJK");
+      /*  $(".lotsawords").animate({color: "#FFA447"}, 'slow', function () { 
+            $(".lotsawords").hide();
+            $("#content-faq").fadeIn();
+
+        });*/
         $(".lotsawords").hide();
         $("#content-faq").fadeIn();
     });
     
     $("#nav-Schedule").on("click", function () {
-                console.log("FUCJK");
-
         $(".lotsawords").hide();
         $("#content-schedule").fadeIn();
     });
         
     $("#nav-Partners").on("click", function () {
-                console.log("FUCJK");
-
         $(".lotsawords").hide();
         $("#content-partners").fadeIn();
     });
         
     $("#nav-Team").on("click", function () {
-                console.log("FUCJK");
-
         $(".lotsawords").hide();
         $("#content-team").fadeIn();
     });
