@@ -4,6 +4,9 @@ $(document).ready(function(){
     
     //intialize clouds function
     //callback is animate clouds
+
+   
+    
     var animateCloud = function(targetElement, speed, first){
         
         var docWidth = $(document).width();  
@@ -12,7 +15,7 @@ $(document).ready(function(){
         }
         var left = parseInt($(targetElement).css('left'));
         var thisSpeed = speed * ((docWidth - left) / docWidth);
-        console.log(thisSpeed);
+
         $(targetElement).animate(  
             {'left': docWidth + 10}, 
             { duration: thisSpeed, complete: function(){
@@ -37,7 +40,62 @@ $(document).ready(function(){
         animateCloud(this, 80000 + speeds[i], true); 
         i++;
     });
-
     
+    var lastPosition = 0;
+    $(document).scroll(function () { 
+
+        position = window.pageYOffset;
+        console.log(position); 
+        if (position > 500) {
+            $('#welcome-pennplaytitle').hide();
+        } else { 
+            var foreground_y = parseInt($("#foreground-hourglass").css("top"));
+            if(position < lastPosition) {
+                $("#foreground-hourglass").css("top", foreground_y + 1);
+            }
+            else {
+                $("#foreground-hourglass").css("top", foreground_y - 1);
+            }
+            lastPosition = position;
+        }
+        
+        if (position > 2150) {
+            console.log("at position!");
+            $('#information-tabs').css('display', "inline");
+            $('#information-tabs').addClass('animated bounceInUp');
+        }
+        
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $('#information-tabs').fadeIn();
+        }
+    });
+    
+    $("#nav-FAQ").on("click", function () {
+        console.log("FUCJK");
+        $(".lotsawords").hide();
+        $("#content-faq").fadeIn();
+    });
+    
+    $("#nav-Schedule").on("click", function () {
+                console.log("FUCJK");
+
+        $(".lotsawords").hide();
+        $("#content-schedule").fadeIn();
+    });
+        
+    $("#nav-Partners").on("click", function () {
+                console.log("FUCJK");
+
+        $(".lotsawords").hide();
+        $("#content-partners").fadeIn();
+    });
+        
+    $("#nav-Team").on("click", function () {
+                console.log("FUCJK");
+
+        $(".lotsawords").hide();
+        $("#content-team").fadeIn();
+    });
 }); 
+
 

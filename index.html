@@ -19,16 +19,12 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300,400italic' rel='stylesheet' type='text/css'>
       
      
-    <!-- Javascript -->
+    <!-- JQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    
-    <!-- Plax ---->
-    <script type="text/javascript" src="js/plax.js"></script>
-    
-      
+        
     <link rel="stylesheet" href="css/animate.min.css">
 
-           <script type="text/javascript" src="js/script.js"></script>
+     <script type="text/javascript" src="js/script.js"></script>
   </head>
 
   <body>
@@ -44,27 +40,95 @@
       <img class="cloud animated bounceIn" src="res/clouds-06.svg">
     </div> 
       
-       <div id="background-hourglass" class="animated fadeIn">
-       <!-- <img id="welcome-pennplaytitle" src="res/pennplaytitle-01.svg">-->
-    <div id="welcome-pennplaytitle">
-         
-               <img src="res/pennplaytitle-02.svg">
-               <img src="res/pennplaytitle-03.svg">
-               <img src="res/pennplaytitle-04.svg">
-                <img src="res/pennplaytitle-10.svg">
-               
-               <img src="res/pennplaytitle-05.svg">
-               <img src="res/pennplaytitle-06.svg">
-               <img src="res/pennplaytitle-07.svg">
-               <img src="res/pennplaytitle-08.svg">
-               <img src="res/pennplaytitle-09.svg">
-             
-                    
-           </div> 
-           </div>
       
-      <!--<div id="welcome-pennplay-title"> </div>-->
-   <!-- <div class="container aligncenter box">
+      
+      
+    <!-- hourglass stuff here
+    <div id="foreground-hourglass" class="js-plaxify" data-xrange="0" data-yrange="40"> </div>
+    <div id="welcome-pennplaytitle" class="js-plaxify" data-xrange="0" data-yrange="20">
+        <img src="res/pennplaytitle-01.svg">       
+    </div> 
+    <div id="background-hourglass" class="js-plaxify animated fadeIn" data-xrange="0" data-yrange="10">    </div> -->
+   
+    <div id="foreground-hourglass"> </div>
+    <div id="welcome-pennplaytitle">
+        <img src="res/pennplaytitle-01.svg">       
+    </div> 
+    <div id="background-hourglass" class=" animated fadeIn">    </div>
+        
+     
+    <div id="bottom stuff">
+        <div id="information-tabs" class="navbar" style="display:none">
+            <div id="nav-FAQ" class="navitem">
+                <a> <h2>FAQ</h2></a>
+            </div>
+
+            <div id="nav-Schedule" class="navitem">
+                <a><h2>Schedule</h2></a>
+            </div>
+            <div id="nav-Partners" class="navitem">
+                <h2>Partners</h2>
+            </div>
+            <div id="nav-Team" class="navitem">
+                <h2>Team</h2>
+            </div>
+
+        </div>
+        <div class="lotsawords" id="content-faq">
+            <p>What is a game jam?
+
+                Who can play?
+
+                Do I need to know how to code?
+
+                What if I don’t have a team?
+
+                How big can my team be?</p>
+        </div>
+        <div class="lotsawords" id="content-schedule">
+            <p>Saturday
+            10 am - 11am Check in
+            11 - 11:30am Opening Ceremony 
+            11:30am Lunch/Team Formation 
+            12pm Hacking Begins 
+            6pm Dinner
+
+            Sunday
+            8am Breakfast
+            12pm Hacking ends
+            12pm  Lunch
+            12:30 - 2  Judging
+            2pm - 3pm - Closing Ceremony
+            </p>
+        </div>
+        <div class="lotsawords" id="content-partners">
+            <p>Last year, Penn Play welcomed Unity, Zynga, and Riot Games as sponsors, and hosted talks from the director of Drexel University’s game design program and scholars researching feminism and the representation of women in gaming communities.
+    email iren@seas.upenn.edu to sponsor (email popup in a button?)</p>
+        </div>
+        <div class="lotsawords" id="content-team">
+            <p>photos and names/year</p> 
+        </div>
+    </div>
+   
+       <!-- <div data-0="background-color:rgb(0,0,255);" data-500="background-color:rgb(255,0,0);"></div>-->
+     
+
+                <!--  <img src="res/pennplaytitle-02.svg">
+            <img src="res/pennplaytitle-03.svg">
+            <img src="res/pennplaytitle-04.svg">
+            <img src="res/pennplaytitle-10.svg">
+            <img src="res/pennplaytitle-05.svg">
+            <img src="res/pennplaytitle-06.svg">
+           <img src="res/pennplaytitle-07.svg">
+           <img src="res/pennplaytitle-08.svg">
+               <img src="res/pennplaytitle-09.svg">
+             -->
+                    
+    
+
+
+
+  <!-- <div class="container aligncenter box">
       <div class="forty"></div>
       <div class="forty"></div>
       <h1>PENN PLAY 2016</h1>
@@ -76,7 +140,7 @@
 
       <p>Last year, Penn Play welcomed Unity, Zynga, and Riot Games as sponsors, and hosted talks from the director of Drexel University’s game design program and scholars researching feminism and the representation of women in gaming communities. </p>
 
-      <h2>Registration coming soon.</h2>
+      <h2>Registration coming soon.</h2> 
 
 
       <div class="socialmedia">
@@ -88,9 +152,11 @@
       <div class="forty"></div>
       <footer class="footer title">
         <p>&copy; 2016</p>
-      </footer>
+      </footer> 
 
-    </div> <!-- /container -->
+    </div>-->
+      
+
 
 
   </body>

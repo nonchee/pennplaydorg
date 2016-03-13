@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" 
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 126.5 190.4"
 	 enable-background="new 0 0 126.5 190.4" xml:space="preserve">
 <metadata>
-	<sfw >
+	<sfw  xmlns="&ns_sfw;">
 		<slices></slices>
-		<sliceSourceBounds  width="1373.5" height="469.3" x="-437" y="-707.2" bottomLeftOrigin="true"></sliceSourceBounds>
+		<sliceSourceBounds  width="1984.9" height="469.3" x="-756.9" y="-707.2" bottomLeftOrigin="true"></sliceSourceBounds>
 	</sfw>
 </metadata>
 <g>
@@ -15,5 +15,5 @@
 		c3.4-2.8,5.9-6.1,7.4-10c1.5-3.8,2.3-8,2.3-12.4c0-4.3-0.8-8.3-2.3-12.1c-1.5-3.8-4-7.2-7.4-10.1c-3.4-2.9-8-5.2-13.7-6.8
 		c-5.7-1.6-12.7-2.4-20.8-2.4H24V81.6z"/>
 </g>
-<text transform="matrix(1 0 0 1 -795.7117 -41.2372)" fill="#FCFCFC" font-family="'Avenir-Book'" font-size="255.6828">PENN PLAY</text>
+<text transform="matrix(1 0 0 1 -1115.5707 -41.2372)" fill="#FCFCFC" font-family="'Avenir-Book'" font-size="255.6828">PENN PLAY 2016</text>
 </svg>
